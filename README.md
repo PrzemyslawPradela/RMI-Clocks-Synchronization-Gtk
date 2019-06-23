@@ -4,4 +4,4 @@ The client-server application using Java RMI and Berkeley’s Algorithm for cloc
 ## Requirements
 * [java-gnome](http://java-gnome.sourceforge.net/get/) installed
 * NTP disabled
-* works only with root privileges
+* root privileges
