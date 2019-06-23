@@ -13,8 +13,8 @@ public class DateValidator {
 		pattern = Pattern.compile(DATE_PATTERN);
 	}
 
-	public boolean validate(String digits) {
-		matcher = pattern.matcher(digits);
+	public boolean validate(String date) {
+		matcher = pattern.matcher(date);
 		return matcher.matches();
 	}
 }
