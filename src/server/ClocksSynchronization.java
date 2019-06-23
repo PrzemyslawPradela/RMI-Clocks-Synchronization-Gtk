@@ -48,18 +48,6 @@ public class ClocksSynchronization implements Runnable {
 			} else {
 				logsTextView.getBuffer().insert(logsTextView.getBuffer().getIterEnd(),
 						"[" + displayDateFormat.format(new Date(System.currentTimeMillis()))
-								+ "] Synchronizacja czasu rozpocznie się za " + server.getClockSyncFreq()
-								+ " sekund\n");
-
-				try {
-					TimeUnit.SECONDS.sleep(server.getClockSyncFreq());
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-
-				logsTextView.getBuffer().insert(logsTextView.getBuffer().getIterEnd(),
-						"[" + displayDateFormat.format(new Date(System.currentTimeMillis()))
 								+ "] Rozpoczeto synchronizację czasu.\n");
 				logsTextView.getBuffer().insert(logsTextView.getBuffer().getIterEnd(),
 						"[" + displayDateFormat.format(new Date(System.currentTimeMillis()))
@@ -115,6 +103,18 @@ public class ClocksSynchronization implements Runnable {
 				logsTextView.getBuffer().insert(logsTextView.getBuffer().getIterEnd(),
 						"[" + displayDateFormat.format(new Date(System.currentTimeMillis()))
 								+ "] Synchronizacja czasu zakończona.\n\n");
+				
+				logsTextView.getBuffer().insert(logsTextView.getBuffer().getIterEnd(),
+						"[" + displayDateFormat.format(new Date(System.currentTimeMillis()))
+								+ "] Synchronizacja czasu rozpocznie się za " + server.getClockSyncFreq()
+								+ " sekund\n");
+
+				try {
+					TimeUnit.SECONDS.sleep(server.getClockSyncFreq());
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
 	}
