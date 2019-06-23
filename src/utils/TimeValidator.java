@@ -13,8 +13,8 @@ public class TimeValidator {
 		pattern = Pattern.compile(TIME_PATTERN);
 	}
 
-	public boolean validate(String digits) {
-		matcher = pattern.matcher(digits);
+	public boolean validate(String time) {
+		matcher = pattern.matcher(time);
 		return matcher.matches();
 	}
 }
