@@ -9,7 +9,7 @@ The client-server application using Java RMI and Berkeley’s Algorithm for cloc
 ## Technologies
 Project is created with:
 * Java version: 11
-* Java-Gnome library version: 4.1.3
+* Java-Gnome version: 4.1.3
 	
 ## Setup
 1. Install Java Runtime Environment.
