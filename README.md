@@ -1,4 +1,4 @@
-# RMI-Clocks-Synchronization-Gtk
+# Client-Server clocks Synchronization
 The client-server application using Java RMI and Berkeley’s Algorithm for clock synchronization on Linux machines with GNOME graphical interface
 
 ## Requirements
