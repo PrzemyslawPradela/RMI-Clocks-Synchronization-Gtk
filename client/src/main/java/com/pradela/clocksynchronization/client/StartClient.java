@@ -1,8 +1,8 @@
-package rmi.clocks.synchronization.gtk.client;
+package com.pradela.clocksynchronization.client;
 
+import com.pradela.clocksynchronization.common.IServer;
+import com.pradela.clocksynchronization.utils.*;
 import org.gnome.gtk.*;
-import rmi.clocks.synchronization.gtk.common.IServer;
-import rmi.clocks.synchronization.gtk.utils.*;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

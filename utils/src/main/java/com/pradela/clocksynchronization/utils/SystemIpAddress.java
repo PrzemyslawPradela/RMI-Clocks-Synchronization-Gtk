@@ -1,4 +1,4 @@
-package rmi.clocks.synchronization.gtk.utils;
+package com.pradela.clocksynchronization.utils;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

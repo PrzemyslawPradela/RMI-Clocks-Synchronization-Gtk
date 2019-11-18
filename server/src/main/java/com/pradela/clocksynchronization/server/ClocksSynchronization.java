@@ -1,7 +1,7 @@
-package rmi.clocks.synchronization.gtk.server;
+package com.pradela.clocksynchronization.server;
 
+import com.pradela.clocksynchronization.common.IClient;
 import org.gnome.gtk.TextView;
-import rmi.clocks.synchronization.gtk.common.IClient;
 
 import java.io.IOException;
 import java.rmi.RemoteException;

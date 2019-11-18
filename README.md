@@ -18,7 +18,7 @@ Project is created with:
 3. Install [java-gnome](http://java-gnome.sourceforge.net/get/)
 4. Add java-gnome to the Maven local repository
    ```bash
-   $ mvn install:install-file -Dfile=/usr/share/java/gtk-4.1.jar -DgroupId=org.gnome \
+   $ sudo mvn install:install-file -Dfile=/usr/share/java/gtk-4.1.jar -DgroupId=org.gnome \
    	-DartifactId=java-gnome -Dversion=4.1.3 -Dpackaging=jar
    ```
 5. Disable NTP
@@ -29,11 +29,11 @@ Project is created with:
    ```bash
    $ cd ../rmi-clocks-synchronization-gtk
    $ sudo mvn install
-   $ sudo mvn exec:java -pl server -Dexec.mainClass=rmi.clocks.synchronization.gtk.server.StartServer
+   $ sudo mvn exec:java -pl server -Dexec.mainClass=com.pradela.clocksynchronization.server.StartServer
    ```
     *Client*
       ```bash
       $ cd ../rmi-clocks-synchronization-gtk
       $ sudo mvn install
-      $ sudo mvn exec:java -pl client -Dexec.mainClass=rmi.clocks.synchronization.gtk.client.StartClient
+      $ sudo mvn exec:java -pl client -Dexec.mainClass=com.pradela.clocksynchronization.client.StartClient
       ```
