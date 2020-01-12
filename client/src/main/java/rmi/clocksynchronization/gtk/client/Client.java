@@ -1,7 +1,4 @@
-package com.pradela.clocksynchronization.client;
-
-import com.pradela.clocksynchronization.common.IClient;
-import org.gnome.gtk.TextView;
+package rmi.clocksynchronization.gtk.client;
 
 import java.io.IOException;
 import java.rmi.RemoteException;
@@ -9,6 +6,10 @@ import java.rmi.server.UnicastRemoteObject;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
+import org.gnome.gtk.TextView;
+
+import rmi.clocksynchronization.gtk.common.IClient;
 
 public class Client extends UnicastRemoteObject implements IClient {
 	private static final long serialVersionUID = 1L;

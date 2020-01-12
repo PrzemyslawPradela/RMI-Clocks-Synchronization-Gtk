@@ -8,9 +8,9 @@ The client-server application using Java RMI and Berkeley’s Algorithm for cloc
 	
 ## Technologies
 Project is created with:
-* Java version: 11
+* Java version: 8
 * Java-Gnome version: 4.1.3
-* Maven version: 3.6.0
+* Maven version: 3.6.3
 	
 ## Setup
 1. Install Java Runtime Environment
@@ -29,11 +29,11 @@ Project is created with:
    ```bash
    $ cd ../rmi-clocks-synchronization-gtk
    $ sudo mvn install
-   $ sudo mvn exec:java -pl server -Dexec.mainClass=com.pradela.clocksynchronization.server.StartServer
+   $ sudo mvn exec:java -pl server -Dexec.mainClass=rmi.clocksynchronization.gtk.server.StartServer
    ```
     *Client*
       ```bash
       $ cd ../rmi-clocks-synchronization-gtk
       $ sudo mvn install
-      $ sudo mvn exec:java -pl client -Dexec.mainClass=com.pradela.clocksynchronization.client.StartClient
+      $ sudo mvn exec:java -pl client -Dexec.mainClass=rmi.clocksynchronization.gtk.client.StartClient
       ```

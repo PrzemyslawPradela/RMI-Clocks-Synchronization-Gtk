@@ -1,8 +1,4 @@
-package com.pradela.clocksynchronization.client;
-
-import com.pradela.clocksynchronization.common.IServer;
-import com.pradela.clocksynchronization.utils.*;
-import org.gnome.gtk.*;
+package rmi.clocksynchronization.gtk.client;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -17,6 +13,22 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
+
+import org.gnome.gtk.Builder;
+import org.gnome.gtk.Button;
+import org.gnome.gtk.Entry;
+import org.gnome.gtk.Gtk;
+import org.gnome.gtk.Label;
+import org.gnome.gtk.MessageDialog;
+import org.gnome.gtk.TextView;
+import org.gnome.gtk.Window;
+
+import rmi.clocksynchronization.gtk.common.IServer;
+import rmi.clocksynchronization.gtk.utils.DateValidator;
+import rmi.clocksynchronization.gtk.utils.DigitsValidator;
+import rmi.clocksynchronization.gtk.utils.IpAddressValidator;
+import rmi.clocksynchronization.gtk.utils.SystemIpAddress;
+import rmi.clocksynchronization.gtk.utils.TimeValidator;
 
 class StartClient {
     private static Client client;

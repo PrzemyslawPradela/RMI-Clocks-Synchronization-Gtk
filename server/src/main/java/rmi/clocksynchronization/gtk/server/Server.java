@@ -1,14 +1,15 @@
-package com.pradela.clocksynchronization.server;
-
-import com.pradela.clocksynchronization.common.IClient;
-import com.pradela.clocksynchronization.common.IServer;
-import org.gnome.gtk.TextView;
+package rmi.clocksynchronization.gtk.server;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Vector;
+
+import org.gnome.gtk.TextView;
+
+import rmi.clocksynchronization.gtk.common.IClient;
+import rmi.clocksynchronization.gtk.common.IServer;
 
 public class Server extends UnicastRemoteObject implements IServer {
 	private static final long serialVersionUID = 1L;

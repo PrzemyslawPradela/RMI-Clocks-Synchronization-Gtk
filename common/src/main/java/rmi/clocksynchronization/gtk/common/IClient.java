@@ -1,4 +1,4 @@
-package com.pradela.clocksynchronization.common;
+package rmi.clocksynchronization.gtk.common;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

@@ -1,13 +1,14 @@
-package com.pradela.clocksynchronization.server;
-
-import com.pradela.clocksynchronization.common.IClient;
-import org.gnome.gtk.TextView;
+package rmi.clocksynchronization.gtk.server;
 
 import java.io.IOException;
 import java.rmi.RemoteException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
+import org.gnome.gtk.TextView;
+
+import rmi.clocksynchronization.gtk.common.IClient;
 
 class ClocksSynchronization implements Runnable {
 	private boolean running = true;
